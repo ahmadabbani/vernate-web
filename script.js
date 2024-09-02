@@ -1,4 +1,53 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /******************HEADER
+  function scrollHeader() {
+    const header = document.getElementById("header");
+    //when the scroll is greater than 50 viewport
+    if (this.scrollY >= 50) header.classList.add("scroll-header");
+    else header.classList.remove("scroll-header");
+  }
+
+  window.addEventListener("scroll", scrollHeader);
+****/
+  /******************Active Link
+  const navlink = document.querySelectorAll(".nav-link");
+
+  function activeLink() {
+    navlink.forEach((a) => a.classList.remove("active-link"));
+    this.classList.add("active-link");
+  }
+  navlink.forEach((a) => a.addEventListener("click", activeLink));
+  *******/
+
+  /*****************Show Menu
+  const navMenu = document.getElementById("nav-menu");
+  navToggle = document.getElementById("nav-toggle");
+  navClose = document.getElementById("nav-close");
+*******/
+  /*******Menu Show
+  if (navToggle) {
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.add("show-menu");
+    });
+  }
+*****/
+  /*******Menu Hide
+  if (navClose) {
+    navClose.addEventListener("click", () => {
+      navMenu.classList.remove("show-menu");
+    });
+  }
+    *******/
+
+  /**********Menu Hide when we click on menu-link
+  const navLink = document.querySelectorAll(".nav-link");
+
+  function linkAction() {
+    navMenu.classList.remove("show-menu");
+  }
+
+  navLink.forEach((link) => link.addEventListener("click", linkAction));
+******/
   const buttons = document.querySelectorAll(".filter-btns");
   const containers = document.querySelectorAll("#works .items");
   buttons.forEach((button) => {
