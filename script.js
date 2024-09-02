@@ -1,4 +1,171 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // ANIMATIONS
+  /***************Home**********************/
+  ScrollReveal().reveal(".main-title", {
+    origin: "left", // Animates from the left
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+  });
+
+  ScrollReveal().reveal(".hero-sc-title", {
+    origin: "right", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+  });
+  ScrollReveal().reveal(".hero-left-img", {
+    origin: "top", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+  });
+  ScrollReveal().reveal(".hero-right-img", {
+    origin: "bottom", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+  });
+  ScrollReveal().reveal(".hero-p", {
+    opacity: 0, // Start with opacity 0
+    duration: 1000, // Duration of the animation in milliseconds
+    delay: 500, // Delay before the animation starts
+    reset: true, // Optional: allows the animation to trigger again when scrolling back
+  });
+
+  // Animate the first box from the left
+  ScrollReveal().reveal(".box:nth-of-type(1)", {
+    origin: "left", // From the left
+    distance: "100px", // Adjust distance as needed
+    duration: 1000, // Animation duration
+    delay: 300, // Delay before animation starts
+    opacity: 0, // Start with opacity 0
+    reset: true, // Optional: reset the animation on scroll up
+  });
+
+  // Animate the second box from the right
+  ScrollReveal().reveal(".box:nth-of-type(2)", {
+    origin: "right", // From the right
+    distance: "100px", // Adjust distance as needed
+    duration: 1000, // Animation duration
+    delay: 600, // Delay before animation starts
+    opacity: 0, // Start with opacity 0
+    reset: true, // Optional: reset the animation on scroll up
+  });
+
+  // Animate the third box from the bottom
+  ScrollReveal().reveal(".box:nth-of-type(3)", {
+    origin: "bottom", // From the bottom
+    distance: "100px", // Adjust distance as needed
+    duration: 1000, // Animation duration
+    delay: 900, // Delay before animation starts
+    opacity: 0, // Start with opacity 0
+    reset: true, // Optional: reset the animation on scroll up
+  });
+  ScrollReveal().reveal(".clients img", {
+    opacity: 0, // Start with opacity 0
+    duration: 1000, // Duration of the animation in milliseconds
+    delay: 500, // Delay before the animation starts
+    reset: true, // Optional: allows the animation to trigger again when scrolling back
+  });
+
+  ScrollReveal().reveal(".section-title", {
+    origin: "left", // Animates from the left
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".about-p", {
+    origin: "right", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+    reset: true,
+  });
+  ScrollReveal().reveal(".about-content .btn", {
+    origin: "bottom", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+    reset: true,
+  });
+  ScrollReveal().reveal(".hero-right-img", {
+    origin: "bottom", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".service-box img", {
+    origin: "right", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+    reset: true,
+  });
+  ScrollReveal().reveal(".service-box .content", {
+    origin: "left", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+    reset: true,
+  });
+  ScrollReveal().reveal(".third-service-img", {
+    opacity: 0, // Start with opacity 0
+    duration: 1000, // Duration of the animation in milliseconds
+    delay: 500, // Delay before the animation starts
+    reset: true,
+  });
+
+  ScrollReveal().reveal("#works .btn", {
+    origin: "right", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".filter", {
+    origin: "bottom", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 500,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".all .item", {
+    scale: 0.8, // Start with a smaller scale (i.e., 80% of the original size)
+    duration: 500, // Duration of the animation in milliseconds
+    delay: 500, // Delay before the animation starts
+    reset: true, // Optional: Reset the animation on scroll up
+    easing: "ease-out", // Optional: Easing function for smoothness
+  });
+
+  ScrollReveal().reveal(".contact-left", {
+    origin: "left", // Animates from the right
+    distance: "200px", // Adjusts the starting position
+    interval: 800,
+    reset: true,
+  });
+  ScrollReveal().reveal(".contact-right", {
+    origin: "right", // Animates from the right
+    distance: "200px", // Adjusts the starting position
+    interval: 800,
+    reset: true,
+  });
+
+  ScrollReveal().reveal("#contact .text", {
+    origin: "bottom", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".contact-list", {
+    origin: "bottom", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    interval: 400,
+    delay: 200,
+    reset: true,
+  });
+
+  ScrollReveal().reveal(".third-row", {
+    origin: "bottom", // Animates from the right
+    distance: "100px", // Adjusts the starting position
+    delay: 900,
+    reset: true,
+  });
+
   /******************HEADER
   function scrollHeader() {
     const header = document.getElementById("header");

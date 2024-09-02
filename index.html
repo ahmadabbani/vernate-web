@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Center Hello</title>
     <link rel="stylesheet" href="style.css" />
+    <!--------ScrollReveal Animation------->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,13 +65,16 @@
       <div class="container-fluid container">
         <div class="row">
           <div class="col-md-2 d-lg-block d-none">
-            <img src="Images/paul-hanaoka-483071-unsplash.jpg" />
+            <img
+              src="Images/paul-hanaoka-483071-unsplash.jpg"
+              class="hero-left-img"
+            />
           </div>
           <div class="col-12 col-md-6 col-lg-5 order-md-1 order-2">
             <div class="divider d-none d-md-block"></div>
-            <h1>Vernate</h1>
+            <h1 class="main-title">Vernate</h1>
             <h1 class="hero-sc-title">Group</h1>
-            <p>When Luxury and Art Meets Design</p>
+            <p class="hero-p">When Luxury and Art Meets Design</p>
           </div>
           <div
             class="col-12 col-md-6 col-lg-5 order-md-2 order-1 hero-third-block"
@@ -132,7 +137,7 @@
     </section>
     <section>
       <div class="container container-fluid">
-        <div class="row">
+        <div class="row clients">
           <div
             class="col-sm-6 col-md-3 d-flex align-items-center justify-content-center"
           >
@@ -159,7 +164,7 @@
     <section id="about"></section>
     <section class="about-content">
       <h2 class="section-title">About Us</h2>
-      <p>
+      <p class="about-p">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
         temporibus error? Eos esse vitae iusto recusandae necessitatibus
         similique laudantium voluptates, voluptas assumenda maxime repellendus
@@ -199,7 +204,10 @@
             </div>
           </div>
           <div class="col-4">
-            <img src="Images/kirill-703001-unsplash-2.jpg" />
+            <img
+              src="Images/kirill-703001-unsplash-2.jpg"
+              class="third-service-img"
+            />
           </div>
           <div class="col-3 third-service-box service-box">
             <h1 class="section-title">Our Services.</h1>
@@ -526,11 +534,11 @@
     <section id="contact">
       <div class="container contact">
         <div class="row first-row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 contact-left">
             <h2>Dont Miss Any Opportunity</h2>
             <p>There are many variations of passages</p>
           </div>
-          <div class="col-sm-8">
+          <div class="col-sm-8 contact-right">
             <div class="form">
               <input type="email" placeholder="Enter your email adresse" />
               <button type="submit">SUBMIT</button>
@@ -544,7 +552,7 @@
               <img src="logos/v-design.jpg" />
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 contact-list">
             <h3>Quick Links</h3>
             <ul>
               <li>About Us</li>
@@ -553,7 +561,7 @@
               <li>Services</li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 contact-list">
             <h3>Contacts</h3>
             <ul>
               <li>
@@ -563,7 +571,7 @@
               <li><strong>Email: </strong>info@email.com</li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 contact-list">
             <h3>Working Hours</h3>
             <p class="m-0 p-0">Monday - Friday 09.00 - 23.00</p>
             <p>Sunday 09.00 - 16.00</p>
