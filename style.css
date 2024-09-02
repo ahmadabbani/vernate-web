@@ -682,3 +682,161 @@ section .btn:hover {
     margin: 0;
     border: none;
 }
+
+#description {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#description img {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+#description .desc h1 {
+    font-size: 70px;
+    padding: 50px;
+}
+
+#description .desc p {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 0 80px;
+}
+
+#description .details {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    gap: 100px;
+    padding: 0 35px;
+}
+
+#description .details ul li {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+#description .details .first-list li {
+    font-weight: 700;
+    padding-left: 25px;
+}
+
+#description .details .second-list {
+    border-left: 1px solid #7A7A7A;
+}
+
+#description .carousel {
+    width: 500px;
+    margin: 0 auto;
+    /* Center the slider */
+}
+
+#description .carousel img {
+    width: 100%;
+    /* Ensure images fill the slider */
+    height: auto;
+}
+
+/* Custom colors for the navigation buttons */
+#description .carousel-control-prev-icon,
+#description .carousel-control-next-icon {
+    background-color: black !important;
+
+    /* Change this to your desired color */
+    border-radius: 50%;
+    /* Optional: Make the icon background circular */
+    width: 35px;
+    /* Adjust the width if needed */
+    height: 35px;
+    z-index: 1;
+    background-size: 60%;
+    /*
+    /* Adjust the height if needed */
+}
+
+
+#similar .item {
+    background-size: cover;
+    width: 20%;
+    max-width: 20%;
+    height: 300px;
+    position: relative;
+    background-position: left;
+    transition: 1s ease-in-out;
+}
+
+#similar .item:nth-child(1) {
+    background-image: url('works/alexandra-gorn-485551-unsplash.jpg');
+    background-size: cover;
+    width: 20%;
+    max-width: 20%;
+    height: 300px;
+}
+
+#similar .item:nth-child(2) {
+    background-image: url('works/chang-duong-1170426-unsplash.jpg');
+}
+
+#similar .item:nth-child(3) {
+    background-image: url('works/charles-1196865-unsplash.png');
+}
+
+#similar .item:nth-child(4) {
+    background-image: url('works/george-pagan-iii-1391890-unsplash.jpg');
+}
+
+#similar .item:hover {
+    background-position: right !important;
+}
+
+
+#similar .item .work-info {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+    bottom: 70px;
+    background-color: black;
+    color: white;
+    display: none !important;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#similar .item .work-info:hover {
+    background-color: white;
+    color: black;
+}
+
+#similar .item:hover .work-info {
+    display: flex !important;
+}
+
+#similar .item .work-info h3 {
+    font-size: 14px;
+    padding: 0;
+    margin: 0 0 5px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#similar .item .work-info .work-name {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+#similar {
+    padding-left: 50px;
+}
